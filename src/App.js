@@ -125,7 +125,7 @@ class App extends Component {
 
     const afschrijving = math.chain(aanschaf).subtract(restwaar).divide(gebruiks)
     const brandstofkosten = math.chain(aantalkm).divide(kmperlit).multiply(prijsper)
-    const rentekosten = math.chain(aanschaf).multiply(renteper)
+    const rentekosten = math.chain(aanschaf).multiply(renteper).divide(100)
 
     const kostenjaar = math.add(parseFloat(afschrijving), parseFloat(brandstofkosten), motorrij, verzeker, onderhou, overig, parseFloat(rentekosten))
     const kostenmaand = math.divide(parseFloat(kostenjaar), 12)
