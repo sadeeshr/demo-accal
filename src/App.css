@@ -554,10 +554,13 @@ textarea.membership-input {
   padding: 0;
   /* height: 500px; */
   background: rgba(255, 255, 255, .3);
-  border-radius: 30px;
+  /* border-radius: 30px; */
   margin: 0;
   /* padding-top: 39px; */
   padding-top: 15px;
+  display: inline-table;
+  border: 1px solid #d7d7d7;
+    border-radius: 6px;
 }
 
 .contentCon-8 {
@@ -1702,7 +1705,7 @@ span.inLeft input {
 }
 
 .col-3 {
-  /* width: 25%; */
+  width: 25%;
   float: left;
   min-height: 1px;
 }
@@ -3883,5 +3886,45 @@ font-size: 12px; */
   }
 }
 
+.newLifeCon{
+  display: inline-block;
+  width: 100%;
+}
 
+.carValue{
+  float: right;
+  width: 60px;
+  font-weight: bold;
+  color: #626262;
+}
 
+.carSection{
+  padding: 10px 20px;
+  border: 1px solid #d7d7d7;
+  border-radius: 6px;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.carSection2 p{
+  background: #d3e7d3;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: 500;
+  display: inline-block;
+  text-align: center;
+  border: 2px solid #bdd8b2;
+  margin-top: 5px;
+}
+
+.carSection2 span{
+  display: block;
+}
+
+.carSection2{
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 25px;
+  width: 50%;
+  display: inline-block;
+}

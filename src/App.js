@@ -97,13 +97,14 @@ class App extends Component {
         break;
     }
 
-    return <div key={key} className="newLifeCon">
-      <div className="col-12">
+    return <div key={key} className="newLifeCon mb-10">
+      <div className="col-6">
         <div className='value'>
-          <div className="col-3 text-right">{`${row}: ${["prijsper", "renteper"].includes(name) ? (value || min) : this.euro(value || min)}`}</div>
+          <div className="">{`${row}: `} <span className="carValue"> {`${["prijsper", "renteper"].includes(name) ? (value || min) : this.euro(value || min)} `}</span></div>
+        
         </div>
       </div>
-      <div className="col-12">
+      <div className="col-6">
         <Slider
           min={min}
           max={max}
@@ -138,32 +139,43 @@ class App extends Component {
           </div>
         </div>
         <div className="mainContentCon">
-          <div className="contentCon overflow">
-            <div>Per Jaar<p>{`${this.euro(kostenjaar)} Euro`}</p></div>
-            <div>Per Maand<p>{`${this.euro(kostenmaand)} Euro`}</p></div>
-            <hr />
-            <div>
+          <div className="contentCon overflow mt-15">
+            <div className="carSection2">
+              <span>Per Jaar</span>
+              <p>{`${this.euro(kostenjaar)} Euro`}</p>
+            </div>
+            <div className="carSection2">
+              <span>Per Maand</span>
+              <p>{`${this.euro(kostenmaand)} Euro`}</p>
+            </div>
+            <div className="carSection">
               {div1.map((row, i) => this.sliderRow(row, i))}
-              <div className="col-12">
-                <div className='value'>
-                  <div className="col-3 text-right">{`Afschrijving  ${this.euro(afschrijving)}`}</div>
+              <div className="newLifeCon">
+                <div className="col-6">
+                  <div className='value'>
+                    <div className="">{`Afschrijving :  `} <span className="carValue"> {`${this.euro(afschrijving)}`} </span></div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div>
+            <div className="carSection">
               {div2.map((row, i) => this.sliderRow(row, i))}
-              <div className="col-12">
-                <div className='value'>
-                  <div className="col-3 text-right">{`Brandstof kosten:  ${this.euro(brandstofkosten)}`}</div>
+              <div className="newLifeCon">
+                <div className="col-6">
+                  <div className='value'>
+                    <div className="">{`Brandstof kosten : `} <span className="carValue"> {`${this.euro(brandstofkosten)}`} </span></div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div>{div3.map((row, i) => this.sliderRow(row, i))}</div>
-            <div>
+            <div className="carSection">{div3.map((row, i) => this.sliderRow(row, i))}</div>
+            <div className="carSection">
               {div4.map((row, i) => this.sliderRow(row, i))}
-              <div className="col-12">
-                <div className='value'>
-                  <div className="col-3 text-right">{`Rente kosten:  ${this.euro(rentekosten)}`}</div>
+              <div className="newLifeCon">
+                <div className="col-6">
+                  <div className='value'>
+                    <div className="">{`Rente kosten : `} <span className="carValue"> {`${this.euro(rentekosten)}`} </span></div>
+                  </div>
                 </div>
               </div>
             </div>
