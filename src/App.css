@@ -3109,69 +3109,6 @@ button.swiper-pagination-bullet {
 }
 
 
-@media only screen and (max-height: 752px) {
-  .footCon-bottom {
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      z-index: 2;
-  }
-  .beforeNav {
-      position: fixed;
-      top: 0;
-      background: #ffffff;
-      z-index: 2;
-  }
-  .navCon {
-      position: fixed;
-      width: 100%;
-      background: #ffffff;
-      margin-top: 0;
-      top: 30px;
-      z-index: 2;
-  }
-  .fix-small-dev{
-    position: fixed;
-    width: 100%;
-    background: #ffffff;
-    margin-top: 0;
-    top: 62px;
-    z-index: 2;
-    
-  }
-  .content-border {
-      margin-top: 60px;
-      height: calc(100% - 60px);
-      overflow: scroll;
-  }
-
-  .content-border.mobile-margin{
-    margin-top: 90px;
-    height: calc(100% - 90px);
-  }
-  .footBtn {
-      margin-bottom: 60px;
-  }
-  .mainContentCon.foot {
-      height: 100%;
-  }
-  .contentCon {
-      height: 100%;
-      padding-top: 5%;
-  }
-  .mainContentCon{
-    height: 100%;
-  }
-  .newlifeImage{
-    height: 120px;
-  }
-  .footCon{
-    margin-bottom: 60px;
-  }
-  .membersCon .leaseCarCon:last-child {
-    margin-bottom: 0;
-}
-}
 
 .rangeslider-horizontal .rangeslider__handle:after{
   width: 28px !important;
@@ -3281,14 +3218,6 @@ button.swiper-pagination-bullet {
   visibility: visible;
 }
 
-@media only screen and (max-width: 362px) {
-  .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
-      right: calc(50% - 160px);
-  }
-  .swiper-button-prev, .swiper-container-rtl .swiper-button-next{
-      left: calc(50% - 160px);
-  }
-}
 
 .sliderBtn{
   position: relative;
@@ -3840,51 +3769,6 @@ font-size: 12px; */
   border: 3px solid #c8c8c8;
   color: #c8c8c8;
 }
-@media only screen and (max-width: 800px) {
-  .navCon{
-      width: 100%;
-      overflow-x: scroll;
-      overflow-y: hidden;
-  }
-  .globeNav{
-      left: 0;
-  }
-  .navCon span{
-      width: initial;
-      display: table-cell;
-  }
-}
-@media only screen and (max-width: 360px) {
-  .container {
-      width: calc(100% - 10px);
-  }
-  .mainContentCon {
-      width: 100%;
-      height: calc(100% - 203px);
-  }
-  .mtableTokens{
-      font-size: 10px;
-      line-height: 15px;
-  }
-  .mtableLink .fs-13 span, .mtableLink .carRaised{
-      font-size: 11px;
-      line-height: 16px;
-      margin-top: 5px;
-   
-  }
-  .mtableLink .carRaised strong{
-      font-size: 11px;
-      font-weight: 800;
-  }
-}
-
-
-
-@media only screen and (max-width: 320px) {
-  .ui-overlaypanel.ui-widget.customOverlay{
-      width: 100%;
-  }
-}
 
 .newLifeCon{
   display: inline-block;
@@ -3927,4 +3811,156 @@ font-size: 12px; */
   padding-bottom: 25px;
   width: 50%;
   display: inline-block;
+}
+
+
+@media only screen and (max-width: 800px) {
+  .navCon{
+      width: 100%;
+      overflow-x: scroll;
+      overflow-y: hidden;
+  }
+  .globeNav{
+      left: 0;
+  }
+  .navCon span{
+      width: initial;
+      display: table-cell;
+  }
+}
+
+
+@media only screen and (max-height: 752px) {
+  .footCon-bottom {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      z-index: 2;
+  }
+  .beforeNav {
+      position: fixed;
+      top: 0;
+      background: #ffffff;
+      z-index: 2;
+  }
+  .navCon {
+      position: fixed;
+      width: 100%;
+      background: #ffffff;
+      margin-top: 0;
+      top: 30px;
+      z-index: 2;
+  }
+  .fix-small-dev{
+    position: fixed;
+    width: 100%;
+    background: #ffffff;
+    margin-top: 0;
+    top: 62px;
+    z-index: 2;
+    
+  }
+  .content-border {
+      /* margin-top: 60px; */
+      height: calc(100% - 60px);
+      overflow: scroll;
+  }
+
+  .content-border.mobile-margin{
+    margin-top: 90px;
+    height: calc(100% - 90px);
+  }
+  .footBtn {
+      margin-bottom: 60px;
+  }
+  .mainContentCon.foot {
+      height: 100%;
+  }
+  .contentCon {
+      height: 100%;
+      padding-top: 0;
+      border: 0;
+      border-radius: 0;
+  }
+  .mainContentCon{
+    height: 100%;
+    width: 100%;
+  }
+  .newlifeImage{
+    height: 120px;
+  }
+  .footCon{
+    margin-bottom: 60px;
+  }
+  .membersCon .leaseCarCon:last-child {
+    margin-bottom: 0;
+  }
+  .carSection{
+    padding: 10px 0px 10px 10px;
+  }
+  .newLifeCon .value{
+    font-size: 12px;
+    line-height: 26px
+  }
+  .carValue{
+    width: initial;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .mainContentCon{
+    width: 100%;
+  }
+  .newLifeCon .value{
+    font-size: 12px;
+    line-height: 26px
+  }
+  .carValue{
+    width: initial;
+  }
+  .content-border{
+    border-radius: 0;
+  }
+}
+
+@media only screen and (max-width: 362px) {
+  .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+      right: calc(50% - 160px);
+  }
+  .swiper-button-prev, .swiper-container-rtl .swiper-button-next{
+      left: calc(50% - 160px);
+  }
+}
+
+
+
+@media only screen and (max-width: 360px) {
+  .container {
+      width: calc(100% - 10px);
+  }
+  .mainContentCon {
+      width: 100%;
+      height: calc(100% - 203px);
+  }
+  .mtableTokens{
+      font-size: 10px;
+      line-height: 15px;
+  }
+  .mtableLink .fs-13 span, .mtableLink .carRaised{
+      font-size: 11px;
+      line-height: 16px;
+      margin-top: 5px;
+   
+  }
+  .mtableLink .carRaised strong{
+      font-size: 11px;
+      font-weight: 800;
+  }
+}
+
+
+
+@media only screen and (max-width: 320px) {
+  .ui-overlaypanel.ui-widget.customOverlay{
+      width: 100%;
+  }
 }
