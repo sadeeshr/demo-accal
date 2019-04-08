@@ -1923,6 +1923,10 @@ span.inLeft input {
   margin-bottom: 5px;
 }
 
+.mb-2 {
+  margin-bottom: 2px;
+}
+
 .ml-3 {
   margin-left: 3px;
 }
@@ -3111,8 +3115,8 @@ button.swiper-pagination-bullet {
 
 
 .rangeslider-horizontal .rangeslider__handle:after{
-  width: 28px !important;
-  height: 28px !important;
+  width: 18px !important;
+  height: 18px !important;
   top: 3px !important;
   left: 3px !important;
   background-color: #ffffff !important;
@@ -3124,19 +3128,19 @@ button.swiper-pagination-bullet {
   background: #e6e6e6 !important;
   box-shadow: none !important;
   border: 0 !important;
-  width: 34px !important;
-  height: 34px !important;
+  width: 24px !important;
+  height: 24px !important;
   transition: all .05s ease;
 }
 
 .rangeslider .rangeslider__handle:hover{
-  width: 60px !important;
-  height: 60px !important;
+  width: 40px !important;
+  height: 40px !important;
 }
 
 .rangeslider-horizontal .rangeslider__handle:hover:after{
-  width: 54px !important;
-  height: 54px !important;
+  width: 34px !important;
+  height: 34px !important;
 }
 
 
@@ -3798,7 +3802,7 @@ font-size: 12px; */
   display: inline-block;
   text-align: center;
   border: 2px solid #bdd8b2;
-  margin-top: 5px;
+  /* margin-top: 5px; */
 }
 
 .carSection2 span{
@@ -3807,8 +3811,8 @@ font-size: 12px; */
 
 .carSection2{
   text-align: center;
-  padding-top: 10px;
-  padding-bottom: 25px;
+  /* padding-top: 10px; */
+  padding-bottom: 5px;
   width: 50%;
   display: inline-block;
 }
@@ -3896,7 +3900,7 @@ font-size: 12px; */
     margin-bottom: 0;
   }
   .carSection{
-    padding: 10px 0px 10px 10px;
+    padding: 5px 0px 5px 10px;
   }
   .newLifeCon .value{
     font-size: 12px;

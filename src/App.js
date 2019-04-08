@@ -109,7 +109,7 @@ class App extends Component {
         break;
     }
 
-    return <div key={key} className="newLifeCon mb-10">
+    return <div key={key} className="newLifeCon mb-2">
       <div className="col-6">
         <div className='value'>
           <div className="">{`${row}: `} <span className="carValue"> {`${["prijsper", "renteper"].includes(name) ? (value || min) : this.euro(value || min)} `}</span></div>
@@ -151,7 +151,7 @@ class App extends Component {
           </div>
         </div>
         <div className="mainContentCon">
-          <div className="contentCon overflow mt-15">
+          <div className="contentCon overflow mt-5">
             <div className="carSection2">
               <span>Per Jaar</span>
               <p>{`${this.euro(kostenjaar)} Euro`}</p>
