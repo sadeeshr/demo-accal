@@ -9,7 +9,19 @@ class App extends Component {
 
   constructor(props) {
     super(props);
-    this.state = {}
+    this.state = {
+      aanschaf: 15000,
+      gebruiks: 5,
+      restwaar: 7500,
+      aantalkm: 15000,
+      kmperlit: 15,
+      prijsper: 1.6,
+      motorrij: 750,
+      verzeker: 500,
+      onderhou: 500,
+      overig: 300,
+      renteper: 2
+    }
   }
 
   euro = (val) => formatNumber(parseFloat(val), { precision: 2, thousand: ".", decimal: ",", stripZeros: true })
@@ -101,7 +113,7 @@ class App extends Component {
       <div className="col-6">
         <div className='value'>
           <div className="">{`${row}: `} <span className="carValue"> {`${["prijsper", "renteper"].includes(name) ? (value || min) : this.euro(value || min)} `}</span></div>
-        
+
         </div>
       </div>
       <div className="col-6">
@@ -133,7 +145,7 @@ class App extends Component {
 
     return (
       <div className="content-border" >
-        <div className="border-bottom-1  fix-small-dev">
+        <div hidden className="border-bottom-1  fix-small-dev">
           <div className="container">
             <span className="lh-40"><strong>Auto Car Calculator</strong></span>
           </div>
@@ -146,7 +158,7 @@ class App extends Component {
             </div>
             <div className="carSection2">
               <span>Per Maand</span>
-              <p>{`${this.euro(kostenmaand)} Euro`}</p>
+              <p>{`${this.euro(math.round(kostenmaand))} Euro`}</p>
             </div>
             <div className="carSection">
               {div1.map((row, i) => this.sliderRow(row, i))}
